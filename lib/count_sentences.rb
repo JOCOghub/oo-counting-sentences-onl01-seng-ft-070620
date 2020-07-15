@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-      self.split(/\.|\?|\!/).delete_if {|w| w.size < 1}.size  
+      self.split(/\.|\?|\!/).delete_if {|w| w.size < 1}.size# < 1 is same as saying .empty?  
   end
   
 end
